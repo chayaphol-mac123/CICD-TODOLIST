@@ -180,7 +180,7 @@
             </div>
         </div>
             
-<!-- twitter link button -->
+<!-- twitter link button edit -->
         <div class="style_twitter">
             <a href="https://twitter.com/share?&text=Todolist form&via=wishesso">
                 <img src="https://i.pinimg.com/originals/9b/3d/28/9b3d28b49ff92ed9de0412d287753b0a.png" width="40" height="20" title="Twitter" />
