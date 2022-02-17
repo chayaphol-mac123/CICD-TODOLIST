@@ -101,6 +101,15 @@
             width: 100%;
             border-spacing: 0 10px;
         }
+        .style_facebook{
+            margin: 10px;
+        }
+        .style_twitter{
+            margin: 10px;
+        }
+        .flex-container {
+            display: flex;
+        }
         /* #edit-task:hover {
             transform: scale(1.5) perspective(10px);
             transition: 0.1s;
@@ -163,15 +172,23 @@
                 @endforeach
                 </tbody>
             </table>
-
+    <div class="flex-container">
+<!-- Facebook link button -->
+        <div class="style_facebook">
             <div class="fb-share-button" data-href="http://127.0.0.1:8000/dashboard" data-layout="button" data-size="large">
                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A8000%2Fdashboard&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Shares</a>
             </div>
-            <div style="margin-top: 15px;">
-                <a href="https://twitter.com/share?&text=Todolist form&via=wishesso">
-                    <img src="https://i.pinimg.com/originals/9b/3d/28/9b3d28b49ff92ed9de0412d287753b0a.png" width="40" height="20" title="Twitter" />
-                </a>
-            </div>
+        </div>
+            
+<!-- twitter link button -->
+        <div class="style_twitter">
+            <a href="https://twitter.com/share?&text=Todolist form&via=wishesso">
+                <img src="https://i.pinimg.com/originals/9b/3d/28/9b3d28b49ff92ed9de0412d287753b0a.png" width="40" height="20" title="Twitter" />
+            </a>
+         </div>
+
+    </div>
+
             
         </div>
     </div>
