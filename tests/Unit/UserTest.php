@@ -16,4 +16,17 @@ class UserTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function test_user_duplication(){
+        $user1 = User::make([
+            'name' => 'John Doe',
+            'email' => 'johndoe@gmail.com'
+        ]);
+        $user2 = User::make([
+            'name' => 'Dary',
+            'email' => 'dary@gmail.com'
+        ]);
+
+        $this->assertTrue($user1->name != $user2->name);
+    }
 }
