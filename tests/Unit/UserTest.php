@@ -12,19 +12,9 @@ class UserTest extends TestCase
      * @return void
      */
     public function test_login_form(){
-        $response = $this->get('/login');
+        $response = $this->get('/logins');
 
         $response->assertStatus(200);
     }
-    
-    public function test_register(){
-        $response = $this->post('/register', [
-            'name' => 'Dary',
-            'email' => 'dary@gmail.com',
-            'password' => 'dary1234',
-            'password_confirmation' => 'dary1234',
-        ]);
 
-        $response->assertRedirect('/home');
-    }
 }
