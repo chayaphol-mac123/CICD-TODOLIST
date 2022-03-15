@@ -48,4 +48,3 @@ jobs:
       - run:
           name: "Run Unit Tests"
           command: ./vendor/bin/phpunit tests/Unit
-
