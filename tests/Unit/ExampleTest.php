@@ -2,10 +2,7 @@
 
 namespace Tests\Unit;
 
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-
-use App\User;
+use PHPUnit\Framework\TestCase;
 
 class ExampleTest extends TestCase
 {
@@ -14,19 +11,9 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    public function test_example()
     {
         $this->assertTrue(true);
     }
-
-    public function testUserCreation()
-    {
-        $user = new User([
-            'name' => "Test User",
-            'email' => "test@mail.com",
-            'password' => bcrypt("testpassword")
-        ]);   
-
-        $this->assertEquals('Test User', $user->name);
-    }
 }
+
