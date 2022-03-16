@@ -2,31 +2,20 @@
 
 namespace Tests\Feature;
 
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
+use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    use WithFaker;
-
-    public function testUserCreationEndpointTest()
+    /**
+     * A basic test example.
+     *
+     * @return void
+     */
+    public function test_example()
     {
-        $name = $this->faker->name();
-        $email = $this->faker->email();
-        $password = "mypassword";
+        $response = $this->get('/');
 
-        $response = $this->postJson('/api/createuser', [
-            'name' => $name, 
-            'email' => $email,
-            'password' => $password,
-            'password_confirmation' => $password
-        ]); 
-
-        $response
-            ->assertStatus(201)
-            ->assertExactJson([
-                'message' => "Successfully created user!",
-            ]);
+        $response->assertStatus(200);
     }
 }
