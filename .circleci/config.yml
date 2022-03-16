@@ -50,5 +50,5 @@ jobs:
           command: ./vendor/bin/phpunit tests/Unit
 
       - run:
-          name: "Registration Test"
+          name: "Run Http Tests"
           command: ./vendor/bin/phpunit tests/Feature
