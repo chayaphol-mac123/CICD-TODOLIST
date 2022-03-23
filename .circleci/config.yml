@@ -56,9 +56,10 @@ jobs:
             php artisan migrate --env=testing
 
       - run:
+          name: "Run Seeder Test"
+          command: php aritsan db:seed --class TaskTableSeeder
+
+      - run:
           name: "Run Http Tests"
           command: ./vendor/bin/phpunit tests/Feature
 
-      - run:
-          name: "Run Seeder"
-          command: ./vendor/bin/phpunit database/seeders
