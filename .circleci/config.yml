@@ -57,7 +57,7 @@ jobs:
 
       - run:
           name: "Run Seeder Test"
-          command: php aritsan db:seed --class TaskTableSeeder
+          command: php artisan db:seed --class TaskTableSeeder
 
       - run:
           name: "Run Http Tests"
