@@ -16,7 +16,7 @@ class UserUnitTest extends TestCase
         $user = new User([
             'name' => 'user',
             'email' => 'test@gmail.com',
-            'password' => bcrypt("password")
+            'password' => "password"
         ]);
 
         $this->assertEquals('Test User', $user->name);
