@@ -8,8 +8,11 @@ class UserTaskIntegrationTest{
 
     // ทดสอบว่า Task สามารถแชร์ให้ User คนอื่นดูได้หรือไม่
 
-    // Songkeit Present ได้หรือไม่
+    // ทดสอบว่า User สามารถมี 0 Task ได้หรือไม่
 
-    
+    // Songkeit Present ได้หรือไม่
+    // Songkeit: ได้
+
+
 
 }
