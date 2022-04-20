@@ -10,6 +10,16 @@ class UserUnitTest extends TestCase
     // Description Start ===============
 
     // Test User
+    public function test_user_create(){
+        // $user = new User([
+        //     'name' => 'user',
+        //     'email' => 'test@gmail.com',
+        //     'password' => bcrypt("password")
+        // ]);
+
+        // $this->assertEquals('Test User', $user->name);
+    }
+
     public function test_usernam_length(){
 
     }
@@ -31,7 +41,7 @@ class UserUnitTest extends TestCase
     }
 
     public function test_password_special_alphabet(){
-        
+
     }
 
     // Test Schema That In Descriptio Filled Is Correct
