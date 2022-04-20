@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Illuminate\Foundation\Testing\RegreshDatabase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\User;
 
 class UserUnitTest extends TestCase
